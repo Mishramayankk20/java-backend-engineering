@@ -84,7 +84,7 @@ Demonstrates the practical application of object-oriented design principles and 
 - Factory Pattern
 - Decorator Pattern
 
-### 5. UserSphere — Containerized Full-Stack User Management Platform
+### 5. user Management System — Containerized Full-Stack User Management Platform
 
 **React | Node.js | Express.js | MySQL | Docker | Kubernetes**
 
