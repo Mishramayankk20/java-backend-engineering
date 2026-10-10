@@ -1,7 +1,6 @@
 # Java Backend Engineering
 
-A collection of production-oriented backend projects built with
-Java and Spring Boot.
+A collection of production-oriented backend projects built with Java and Spring Boot, alongside full-stack and container orchestration projects.
 
 The repository focuses on:
 
@@ -12,26 +11,29 @@ The repository focuses on:
 - Fault tolerance
 - Rate limiting
 - Database design
+- Containerization and orchestration
 - Design patterns
 - HLD / LLD
-- Clean and maintainable backend code
+- Clean and maintainable code
 
 ## Tech Stack
 
-Java • Spring Boot • Spring MVC • REST • MySQL
-• OpenFeign • Consul • Resilience4j • Swagger
-• JUnit • Maven • Git
+**Backend:** Java, Spring Boot, Node.js, Express.js, REST APIs  
+**Frontend:** React, Axios, Bootstrap  
+**Databases:** MySQL  
+**Microservices:** OpenFeign, Consul, Resilience4j  
+**DevOps:** Docker, Kubernetes  
+**Tools:** Swagger, JUnit, Maven, Git, GitHub
 
 ## Projects
 
 ### 1. Order & Cart Microservices ⭐
 
-Java | Spring Boot | MySQL | Consul | OpenFeign | Resilience4j
+**Java | Spring Boot | MySQL | Consul | OpenFeign | Resilience4j**
 
-Two independent microservices communicating through
-service discovery and REST.
+Two independent microservices communicating through service discovery and REST.
 
-Key engineering concepts:
+**Key engineering concepts:**
 
 - Service discovery using Consul
 - Inter-service communication using OpenFeign
@@ -44,42 +46,92 @@ Key engineering concepts:
 
 ### 2. Rate Limiter
 
-Java | Spring Boot | Token Bucket | ConcurrentHashMap
+**Java | Spring Boot | Token Bucket | ConcurrentHashMap**
 
-Implemented an in-memory rate limiter using the Token Bucket
-algorithm.
+Implemented an in-memory rate limiter using the Token Bucket algorithm.
 
-Engineering concepts:
+**Engineering concepts:**
 
-- Concurrency
-- Thread safety
+- Concurrency and thread safety
 - Request interception
-- Token bucket algorithm
+- Token Bucket algorithm
 - HLD / LLD
+- Request throttling
 
 ### 3. URL Shortener
 
-Java | Spring Boot | REST
+**Java | Spring Boot | REST APIs**
 
 Designed a URL shortening service with HLD and LLD documentation.
 
+**Engineering concepts:**
+
+- REST API design
+- URL generation and redirection
+- Resource identification
+- System design fundamentals
+
 ### 4. Restaurant Management System
 
-Java | OOP | Design Patterns
+**Java | OOP | Design Patterns**
 
-Demonstrates:
+Demonstrates the practical application of object-oriented design principles and design patterns.
+
+**Design patterns implemented:**
 
 - Strategy Pattern
 - Observer Pattern
 - Factory Pattern
 - Decorator Pattern
 
-## Architecture
+### 5. UserSphere — Containerized Full-Stack User Management Platform
 
-Architecture diagrams and HLD/LLD documentation are included
-for selected projects.
+**React | Node.js | Express.js | MySQL | Docker | Kubernetes**
 
-...
+A full-stack user management application that implements CRUD operations through a React frontend and a Node.js/Express REST API, backed by MySQL.
+
+The application is packaged into containers and deployed using Kubernetes manifests for local cluster orchestration.
+
+**Key engineering concepts:**
+
+- Full-stack application architecture
+- REST API integration using Axios
+- CRUD operations and relational database persistence
+- Docker-based frontend and backend containerization
+- Kubernetes Deployments and Services
+- PersistentVolume and PersistentVolumeClaim configuration for database storage
+- Service discovery and component communication within the cluster
+- Environment-based database configuration
+- Local deployment and container orchestration
+
+**Architecture:**
+
+```text
+React Frontend
+      |
+      v
+Node.js / Express REST API
+      |
+      v
+   MySQL Database
+      |
+      v
+ Persistent Storage
+
+Docker + Kubernetes
+manage application deployment
+and container orchestration
+```
+
+**Repository:** [View Project](...)
+
+**Note:** The Kubernetes deployment requires a configured local cluster, valid container images, and environment-specific networking and database settings.
+
+## Architecture & System Design
+
+Architecture diagrams and HLD/LLD documentation are included for selected projects.
+
+The projects explore backend engineering concepts, distributed service communication, API design, database persistence, design patterns, and container orchestration.
 
 ## Author
 
